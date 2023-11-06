@@ -1,4 +1,4 @@
--- 11/06/2023 change 1
+-- 11/06/2023 change 2
 if not exists (select * from sys.tables t join sys.schemas s on (t.schema_id = s.schema_id) where s.name = 'production' and t.name = 'brands') 	
 CREATE TABLE production.brands (
 	brand_id INT IDENTITY (1, 1) PRIMARY KEY,
